@@ -1,0 +1,270 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --primary-color: #e6e6e6;
+    --secondary-color: #555;
+    --accent-color: burlywood;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    background: #fff;
+}
+
+/* ================= LINKS ================= */
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+ul {
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* ================= CONTAINER SYSTEM ================= */
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.menu-ctn {
+    margin-left: 10px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    
+}
+
+/* ================= NAVBAR ================= */
+
+.navbar {
+    background: #ffffff;
+    padding: 5px 0;
+}
+
+.navbar .container {
+    display: flex;
+    align-items: center;
+}
+
+/* LOGO (LEFT) */
+.logo {
+    flex-shrink: 0;
+    height: auto;
+    width: 75px;
+}
+
+/* MENU (CENTER) */
+.main-menu {
+    flex: 1;
+}
+
+.main-menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+/* NAV LINKS */
+.navbar .main-menu ul li a {
+    padding: 10px 15px;
+    display: block;
+    font-weight: 600;
+    transition: 0.2s;
+}
+
+.navbar .main-menu ul li a:hover {
+    color: var(--accent-color);
+}
+
+/* AUTH BUTTONS (RIGHT) */
+.auth-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+/* ================= BUTTONS ================= */
+
+.btn {
+    display: inline-block;
+    padding: 2.5px 10px;
+    background-color: var(--accent-color);
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.2s;
+}
+
+.btn:hover {
+    opacity: 0.8;
+}
+
+/* SIGNUP BUTTON */
+.signup-btn {
+    background-color: transparent;
+    color: #333;
+    border: 1px solid #7a7a7a;
+}
+
+/* CART ICON */
+.cart-btn {
+    background-color: transparent;
+}
+
+.cart-btn i {
+    font-size: 1.5rem;
+    color: #333;
+}
+
+.cart-btn:hover i {
+    color: var(--accent-color);
+}
+
+/* ================= HERO SECTION ================= */
+
+.hero {
+    background-image: none;
+    background-color: transparent;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: red;
+    border: solid 1px #333;
+    position: relative;
+}
+
+.hero .container {
+    position: relative;
+    z-index: 1;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 15px;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    background-color: transparent;
+    border: solid 1px #333;
+}
+
+.hero-content {
+    text-align: left;
+    background-color: transparent;
+    border: solid 1px #333;
+}
+
+.hero-heading {
+    font-size: 2.5rem;
+    font-weight: 700;
+    background-color: transparent;
+    border: solid 1px #333;
+}
+
+.hero-quote {
+    font-size: 1.2rem;
+    margin-top: 10px;
+    color: #555;
+    background-color: transparent;
+    border: solid 1px #333;
+}
+
+/* ================= UTILITY TEXT ================= */
+
+.text-xxl {
+    font-size: 2.5rem;
+    line-height: 1.6;
+    font-weight: 700;
+}
+
+.text-lg {
+    font-size: 1.8rem;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.text-md {
+    font-size: 1.2rem;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.text-sm {
+    font-size: 0.9rem;
+    line-height: 1.5;
+    font-weight: normal;
+}
+
+.text-center {
+    text-align: center;
+}
+
+/* ================= OFFER SECTION ================= */
+.offer {
+    padding: 30px 0;
+}
+
+.offer .offer-heading {
+    width: 100%;
+    font-size: 2rem;
+    margin-bottom: 0px;
+    color: #ffffff;
+    background-color: #8e624d;
+}
+
+.offer .offer-lower {
+    width: 100%;
+    font-size: 1rem;
+    margin-bottom: 50px;
+    color: rgb(247, 203, 139);
+    background-color: #8e624d;
+}
+
+
+.cards-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    margin-left: 30px;
+    margin-right: 10px;
+    gap: 10px;
+}
+
+.offer-card {
+    background-color: transparent;
+    border: solid 1px #333;
+    border-radius: 5px;
+    font-size: 75%;
+    padding: 10px;
+    transition: 0.2s;
+
+}
+
+.offer-card-img {
+    width: 25%;
+    height: 50%;
+    align-items: center;
+    display: flex;
+    align-items: center;
+}
+
+.menu-btn {
+    display: inline-block;
+    padding: 5px 15px;
+    background-color: #ab8346;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 10px;
+    transition: 0.2s;
+}
